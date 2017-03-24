@@ -1,0 +1,33 @@
+<div class="col-md-12">		
+	<div class="col-md-4 col-md-push-4">
+		<form (ngSubmit)="register()" class="form-horizontal" #regForm="ngForm">
+			<h3 class="font-green">Sign Up</h3>
+			<div [hidden]='!registerFailed' id="register-failed" class="alert alert-danger col-sm-12">
+				{{registerMsg}}
+			</div>
+			<div [hidden]='!registerSuccess' id="register-success" class="alert alert-success col-sm-12">
+				{{registerMsg}}
+			</div>
+			<div [hidden]='registerSuccess'>
+				<div class="form-group">
+					<label class="control-label visible-ie8 visible-ie9">Full Name</label>
+					<input id="fullname" required [(ngModel)]="model.fullname" class="form-control placeholder-no-fix" type="text" placeholder="Full Name" name="fullname"
+					/>					
+				</div>				
+				<div class="form-group">
+					<label class="control-label visible-ie8 visible-ie9">Email</label>
+					<input required [(ngModel)]="model.email" class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email" />
+				</div>
+				<div class="form-group">
+					<label class="control-label visible-ie8 visible-ie9">Password</label>
+					<input required [(ngModel)]="model.password" class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password"
+						placeholder="Password" name="password" />
+				</div>
+				 <div class="form-actions">
+					<button type="submit" id="btnBack" name="btnBack" [routerLink]="['/login']" class="btn btn-info pull-left">Back</button>					
+                    <button type="submit" id="reg" name="reg" [disabled]="!regForm.valid" class="btn btn-success pull-right">Submit</button>					
+                </div>
+			</div>
+		</form>
+	</div>
+</div>

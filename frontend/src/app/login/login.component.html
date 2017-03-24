@@ -1,0 +1,31 @@
+<div class="col-md-12"> 
+  <!-- BEGIN LOGIN -->
+  <div class="col-md-4 col-md-push-4">
+    <!-- BEGIN LOGIN FORM -->
+    <div class="login-form" id="login_form" name="login_form">
+      <h3 class="form-title">Login</h3>
+      <div class="alert alert-danger" [hidden]='!loginFailed' id="login-alert">
+        <button class="close" data-close="alert"></button> {{loginMsg}}
+      </div>
+      <div class="form-group">
+        <label class="control-label visible-ie8 visible-ie9">Email</label>
+        <div class="input-icon">
+          <i class="fa fa-user"></i>
+          <input id="login-email" type="text" class="form-control placeholder-no-fix" [(ngModel)]="model.email" name="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label visible-ie8 visible-ie9">Password</label>
+        <div class="input-icon">
+          <i class="fa fa-lock"></i>
+          <input id="login-password placeholder-no-fix" type="password" class="form-control" [(ngModel)]="model.password" name="password"
+            placeholder="Password">
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit"  [routerLink]="['/register']" class="btn btn-info pull-left">Register</button>
+        <button type="submit" (click)="login()" class="btn btn-success pull-right">Login</button>        
+      </div>            
+    </div>
+  </div>
+</div>

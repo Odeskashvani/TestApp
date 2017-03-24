@@ -1,0 +1,123 @@
+.page-footer {
+    padding: 8px 20px 5px;
+    font-size: 13px;
+    height: 33px;
+    background-color: #364150 !important;
+}
+.fixed-height{min-height: 650px;}
+
+.page-header .page-header-menu .top-menu .navbar-nav>li.dropdown-dark .dropdown-menu {
+    background: #2e343b;
+    border: 0;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #373e47;
+}
+
+.navbar-fixed-top{
+    background-color: #364150 !important;
+}
+
+/*************  Side Nav CSS *****************/
+
+/* The side navigation menu */
+/*.mysidenav {
+    height: 100%; 
+    width: 0;
+    position: fixed; 
+    z-index: 100; 
+    top: 0;
+    left: 0;
+    background-color: #364150; 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}*/
+
+.static{
+    margin-left: 0px;
+    width: auto;
+}
+
+/* The navigation menu links */
+/*.white, .white a {
+  color: #fff;
+  padding-right: 10px;
+  padding-top:16px;
+}*/
+
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-language .dropdown-toggle .langname, .page-header.navbar .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle .username.username-hide-on-mobile{
+    display: inline-block !important;
+}
+
+.h-divider{
+ margin-top:5px;
+ margin-bottom:5px;
+ height:1px;
+ width:100%;
+ border-top:1px solid gray;
+}
+
+/*.page-header.navbar .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle{
+    padding:0px;
+}*/
+
+/***** Side nav bar */
+/*.sidebar-menu{
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+    padding-left: 7px;
+    padding-right: 5px;
+    font-size: 12px;
+    
+}
+.sidebar-menu li{
+    list-style: none;
+    padding: 2px 0 3px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.sidebar-menu li>a{
+    color: #b4bcc8;
+    padding: 1px;
+    text-decoration: none;
+    display: block;
+}
+.mysidenav>ul>li>ul>li{
+    padding-top: 5px;
+    display: block;
+}
+.mysidenav>ul>li>a:hover, .offcanvas a:focus  {
+    background: #3e4b5c none repeat scroll 0 0 !important;
+    font-size: 12px;
+    display: block;
+}
+.mysidenav>ul>li>ul>li>a:hover, .offcanvas a:focus  {
+    background: #3e4b5c none repeat scroll 0 0 !important;
+    font-size: 12px;
+    display: block;
+}
+.mysidenav>ul>li>a {    
+    font-size: 12px;
+}
+.mysidenav>ul>li>ul>li>a {    
+    font-size: 12px;
+}
+.mysidenav .sidebar-menu > li.open > a{
+    background: #36c6d3 none repeat 0 0;
+     padding: 7px 10px;
+     display: block;
+     color: #fff;
+     font-size: 14px;
+}*/
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/*@media screen and (max-height: 450px) {
+    .mysidenav {padding-top: 15px;}
+    .mysidenav a {font-size: 18px;}
+}*/
