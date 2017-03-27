@@ -1,0 +1,19 @@
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+
+# IDEs and editors
+/.idea
+/.vscode
+.project
+.classpath
+*.launch
+.settings/
+
+
+# e2e
+/e2e/*.js
+/e2e/*.map
