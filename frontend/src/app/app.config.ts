@@ -8,7 +8,6 @@ export interface IAppConfig {
 
 export const AppConfig: IAppConfig = {
     apiEndpoint: "http://localhost:3002"
-    //apiEndpoint: "http://ec2-35-160-38-34.us-west-2.compute.amazonaws.com:3002"
 };
 
 
